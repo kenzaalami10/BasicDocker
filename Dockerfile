@@ -1,6 +1,6 @@
 FROM python:3.9.8
-WORKDIR /soap
-COPY requirements.txt requirements.txt
+WORKDIR /app
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-CMD [ "python3", "app.py"]
+ENTRYPOINT ["python3", "app.py"]
