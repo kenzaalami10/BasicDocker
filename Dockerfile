@@ -9,5 +9,5 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Point d'entrée pour l'application
-ENTRYPOINT ["python3", "src/app.py"]
+ENTRYPOINT ["python3", "app.py"]
 
